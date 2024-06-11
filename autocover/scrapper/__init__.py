@@ -13,7 +13,7 @@ def YoutubeAudioDownload(video_url):
 
         # Convert the downloaded video to MP3
         video_path = f"{AUDIO_DOWNLOAD_DIR}/temp_audio.mp4"
-        mp.AudioFileClip(video_path).write_audiofile(f"{AUDIO_DOWNLOAD_DIR}/audio.mp3")
+        mp.AudioFileClip(video_path).write_audiofile(f"{AUDIO_DOWNLOAD_DIR}/audio2.mp3")
 
         # Clean up temporary files
         mp.os.remove(video_path)
@@ -23,4 +23,4 @@ def YoutubeAudioDownload(video_url):
         print("Failed to download and convert audio:", str(e))
 
 # Example usage
-YoutubeAudioDownload("https://youtu.be/xK8SEUzk7BU")
+YoutubeAudioDownload("https://www.youtube.com/watch?v=Q7IVjcgfYRg")
